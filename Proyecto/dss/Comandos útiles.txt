@@ -1,0 +1,11 @@
+git clone https://github.com/dgm91-ua/dss.git
+git checkout "Tu rama"
+git pull
+
+cd /dss
+composer update
+php artisan key:generate
+php artisan migrate:install
+php artisan migrate
+php artisan migrate:status
+php artisan db:seed
